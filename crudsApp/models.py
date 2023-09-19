@@ -36,7 +36,7 @@ class profile(models.Model):
     )
 
     Name = models.CharField(max_length=20)
-    Photo = models.ImageField(upload_to='prof_pic/')
+    hoto = models.ImageField(upload_to='prof_pic/', default="images.png")
     Address = models.TextField(max_length=40)
     Contact_numbers = models.TextField(max_length=15)
     Email_Address = models.EmailField(max_length=30)
