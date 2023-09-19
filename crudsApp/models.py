@@ -45,3 +45,6 @@ class profile(models.Model):
     Marital_status = models.CharField(choices=MARITAL_STATUS, max_length=15)
     gender = models.CharField(choices=GENDER, max_length=10, default='Male')
     blood_group = models.CharField(choices=BLOOD_GROUP, max_length=8, default='A+')
+
+    def __str__(self):
+        return self.Name
