@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Project is open</h1>
-{% for prof in prof %}
-<p>--------------</p>
-<img src="{{prof.Photo.url}}">
-<p>name: {{prof.Name}}</p>
-<p>email: {{prof.Email_Address}}</p>
-<p>number: {{prof.Contact_numbers}}</p>
-<p>--------------</p>
-{% endfor %}
-</body>
-</html>
+{% extends 'base.html' %}
+<!--base connect to code -->
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Project is open</h1>-->
+<!--{% for prof in prof %}-->
+<!--<p>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+<!--<img style="height:150px; width:150px" src="{{prof.Photo.url}}">-->
+<!--<p>name: {{prof.Name}}</p>-->
+<!--<p>email: {{prof.Email_Address}}</p>-->
+<!--<p>number: {{prof.Contact_numbers}}</p>-->
+<!--<p>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+<!--{% endfor %}-->
+<!--</body>-->
+<!--</html>-->
+
