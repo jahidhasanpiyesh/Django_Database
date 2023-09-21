@@ -40,7 +40,7 @@ class profile(models.Model):
     Address = models.TextField(max_length=40)
     Contact_numbers = models.TextField(max_length=15)
     Email_Address = models.EmailField(max_length=30)
-    Date_of_Birth = models.DateField()
+    Date_of_Birth = models.CharField(max_length=20)
     Religion = models.CharField(choices=RELIGION, max_length=20)
     Nationality = models.TextField(max_length=20)
     Marital_status = models.CharField(choices=MARITAL_STATUS, max_length=15)
